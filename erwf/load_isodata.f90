@@ -29,16 +29,16 @@ SUBROUTINE load_isodata
 
 !   Nuclear geometry
 !
-!  READ (isofile, *) 
-!  READ (isofile, *) A 
-!  READ (isofile, *) 
-!  READ (isofile, *) APARM 
-!  READ (isofile, *) 
-!  READ (isofile, *) CPARM 
+  READ (isofile, *) 
+  READ (isofile, *) A_mass 
+  READ (isofile, *) 
+  READ (isofile, *) A_fermi 
+  READ (isofile, *) 
+  READ (isofile, *) C_fermi
 
 !   Nuclear mass  
 !  READ (isofile, *) 
-!  READ (isofile, *) EMNAMU 
+!  READ (isofile, *) emnamu 
 
 !
 !  IF (EMNAMU /= 0.D0) THEN 
@@ -51,12 +51,12 @@ SUBROUTINE load_isodata
 !
 !   Nuclear spin and moments
 !
-!  READ (isofile, *) 
-!  READ (isofile, *) SQN 
-!  READ (isofile, *) 
-!  READ (isofile, *) DMOMNM 
-!  READ (isofile, *) 
-!  READ (isofile, *) QMOMB 
+  READ (isofile, *) 
+  READ (isofile, *) i_nuc 
+  READ (isofile, *) 
+  READ (isofile, *) d_nuc 
+  READ (isofile, *) 
+  READ (isofile, *) q_nuc 
     
   RETURN  
   
